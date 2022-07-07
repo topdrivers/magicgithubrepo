@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/list_user_avatar" />
 
     <TextView
         android:id="@+id/item_list_user_username"
@@ -36,6 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:background="@null"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:contentDescription="@string/user_delete_button"
         app:layout_constraintBottom_toBottomOf="@+id/item_list_user_username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/item_list_user_username"
